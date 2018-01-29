@@ -1,0 +1,17 @@
+.c-mobile__input {
+    background-color: #ccc;
+    padding: 0 8px;
+    border-radius: 5px;
+    padding: 5px 32px;
+    width: 300px;
+    &.shown {
+        opacity: 1;
+    }
+    &.hidden {
+        width: 0;
+        opacity: 0;
+    }
+    @include media($min1024) {
+        display: none;
+    }
+}

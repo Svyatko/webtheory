@@ -1,0 +1,7 @@
+.c-nav__list-item {
+    float: left;
+
+    &:first-child {
+        border-left: none;
+    }
+}

@@ -1,0 +1,20 @@
+.c-mobile__list {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #474849;
+    z-index: 15;
+    transition: 0.5s cubic-bezier(.25,.75,.5, 1.2);
+    height: 100%;
+    overflow-y: scroll;
+    &.hidden {
+        left: -100vw;
+    }
+    &.shown {
+        left: 0;
+    }
+
+    @include media($min1024) {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+.c-mobile {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    position: relative;
+    @include media($min1024) {
+        display: none;
+    }
+}

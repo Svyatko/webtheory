@@ -1,0 +1,83 @@
+.u-screenreader-only {
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.u-hidden {
+	display: none !important;
+}
+.u-desktop-inline {
+	display: none;
+
+	@include media($min1024) {
+		display: inline-block;
+	}
+}
+
+.u-desktop-block {
+	display: none;
+
+	@include media($min1024) {
+		display: block;
+	}
+} 
+
+.u-mobile {
+	display: block;
+
+	@include media($min1024) {
+		display: none;
+	}
+}
+.u-block {
+	display: block;
+}
+.u-inline-block {
+	display: inline-block;
+}
+.u-overflow {
+	overflow: hidden;
+}
+.u-clearfix {
+	@include clearfix;
+}
+.u-position {
+	@include position;
+}
+.u-clearfix {
+	@include clearfix;
+}
+.u-text-left {
+	text-align: left;
+}
+.u-text-right {
+	text-align: right;
+}
+.u-text-center {
+	text-align: center;
+}
+.u-text-italic {
+	font-style: italic;
+}
+.u-vertical-center {
+	@include position(absolute, 50% null null null);
+	@include transform(translateY(-50%));
+}
+.u-preload-it {
+	position: relative;
+
+	img,
+	video,
+	iframe,
+	object,
+	embed {
+		@include position(absolute, 0 0 0 0);
+	}
+}
+.u-responsive-image {
+	max-width: 100%;
+	display: block;
+}

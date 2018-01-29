@@ -1,0 +1,26 @@
+.c-header__cabinet {
+    display: flex;
+    p {
+        font-size: 11px;
+        color: #bfbfbf;
+        margin: 0;
+    }
+    h4 {
+        margin: 0;
+        // padding: 10px;
+    }
+    
+    @include media($min1024) {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0; 
+            height: 0; 
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;        
+            border-top: 7px solid #d9d9d9;
+            top: 25px;
+            right: 156px;
+        }        
+    }
+}

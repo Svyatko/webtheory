@@ -1,0 +1,3 @@
+
+
+// export {getPath, getAllPath}

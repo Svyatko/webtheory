@@ -1,0 +1,110 @@
+/*
+    Content:
+    1. Import fonts, frameworks, helpers
+    2. Import JS styles
+    3. Import objects
+    4. Import components
+    5. Import utilities
+    6. Import IE styles
+*/
+/*
+    1. Import fonts, frameworks, helpers
+ */
+@import "generic/fonts";
+@import "vendor/normalize";
+@import "vendor/bourbon/bourbon";
+@import "generic/variables";
+@import "vendor/neat/neat";
+@import "generic/mixins";
+@import "generic/default";
+/*
+    2. Import JS styles
+ */
+/*
+    3. Import objects
+ */
+@import "generic/objects";
+/*
+    4. Import components
+ */
+// Mobile
+@import "components/mobile/mobile";
+@import "components/mobile/__item/mobile__item";
+@import "components/mobile/__poll/mobile__poll";
+@import "components/mobile/__find/mobile__find";
+@import "components/mobile/__search/mobile__search";
+@import "components/mobile/__link/mobile__link";
+@import "components/mobile/__list/mobile__list";
+@import "components/mobile/__burger/mobile__burger";
+@import "components/mobile/__search-button/mobile__search-button";
+@import "components/mobile/__input/mobile__input";
+
+// MobileFooter
+@import "components/mobile-footer/mobile-footer";
+
+// Navigation
+@import "components/navi/__nav/navi__nav";
+@import "components/navi/__nav-item/navi__nav-item";
+@import "components/navi/__nav-link/navi__nav-link";
+@import "components/navi/__nav-list/navi__nav-list";
+@import "components/navi/__search-input/navi__search-input";
+@import "components/navi/__search-button/navi__search-button";
+
+// Header
+@import "components/header/header";
+@import "components/header/__profile-part/header__profile-part";
+@import "components/header/__cabinet/header__cabinet";
+@import "components/header/__buttons/header__buttons";
+@import "components/header/__avatar-name/header__avatar-name";
+@import "components/header/__avatar-icon/header__avatar-icon";
+@import "components/header/__logo/header__logo";
+
+// Sidebar
+@import "components/sidebar/sidebar";
+@import "components/sidebar/__nav/sidebar__nav";
+@import "components/sidebar/__nav/sidebar__nav-list";
+@import "components/sidebar/__nav/sidebar__nav-link";
+@import "components/sidebar/__nav/sidebar__nav-item";
+@import "components/sidebar/__poll/sidebar__poll";
+@import "components/sidebar/__footer/sidebar__footer";
+@import "components/sidebar/__stats/sidebar__stats-item";
+@import "components/sidebar/__stats/sidebar__stats-link";
+
+// Content 
+@import "components/content/content";
+@import "components/content/__articles/content__articles";
+@import "components/content/__articles-list/content__articles-list";
+@import "components/content/__video-title/content__video-title";
+@import "components/content/__video-desc/content__video-desc";
+@import "components/content/__video-item/content__video-item";
+@import "components/content/__video-list/content__video-list";
+@import "components/content/__video-img/content__video-img";
+@import "components/content/__video-links/content__video-links";
+
+// Main
+
+.c-content__articles {
+    @include media($min1024) {
+        @include direction-context(right-to-left) {
+            @include span-columns(4 of 9);
+        }
+    }
+}
+
+.c-content__video-list {
+    @include media($min1024) {
+        @include direction-context(right-to-left) {
+            @include span-columns(5 of 9);
+        }
+    }
+}
+
+/*
+    5. Import utilities
+ */
+@import "generic/utilities";
+/*
+    6. Import IE styles
+ */
+@import "generic/ie";
+ 

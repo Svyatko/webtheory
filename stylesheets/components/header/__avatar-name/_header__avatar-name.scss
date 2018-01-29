@@ -1,0 +1,19 @@
+.c-header__avatar-name {
+    // display: none;
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    padding: 18px 7px;
+    @include media($min1024) {
+        display: block;
+        h4 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+}

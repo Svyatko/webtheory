@@ -1,0 +1,78 @@
+/*
+    Content:
+    1. Fields & Form buttons
+    2. Links
+    3. Lists
+    4. Paragraphs
+    5. Html, Body
+ */
+
+/*
+    1. Fields & Form buttons
+ */
+input,
+textarea {
+	outline: none;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	@include placeholder {
+		color: #999999;
+		opacity: 1;
+	}
+	@include border-top-radius(0);
+	@include border-bottom-radius(0);
+}
+
+textarea { resize: none; }
+button { outline: none; cursor: pointer; }
+
+input[type="checkbox"] {
+	appearance: checkbox;
+	-moz-appearance: checkbox;
+	-webkit-appearance: checkbox;
+}
+
+/*
+    2. Links
+ */
+a {
+	color: $base-link--color;
+	outline: none;
+	text-decoration: none;
+	&:hover { text-decoration: none; }
+}
+
+/*
+    3. Lists
+ */
+ul {
+	padding: 0;
+	margin: 0;
+	li { list-style: none; }
+}
+
+/*
+    4. Paragraphs
+ */
+ p {
+	word-break: break-word;
+	overflow-wrap: break-word;
+	white-space: normal;
+}
+
+/*
+    5. Html, Body
+ */
+body {
+	@include position();
+	overflow-x: hidden;
+	min-width: 320px;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: $base-line-height;
+	font-size: $base-font-size;
+	color: $base-font--color;
+	font-family: $base-font;
+	background-color: $base-background-color;
+	// padding-top: 32px;
+}

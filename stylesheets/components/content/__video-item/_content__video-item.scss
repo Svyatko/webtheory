@@ -1,0 +1,8 @@
+.c-content__video-item h4 {
+    font-size: 18px;
+    padding-bottom: 7px;
+    border-bottom: 0.5px solid #f1f0f0;
+    @include media($min1024) {
+        font-size: 14px;
+    }
+}

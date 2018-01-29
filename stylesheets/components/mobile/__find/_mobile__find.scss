@@ -1,0 +1,20 @@
+.c-mobile__find button {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    // position: absolute;
+    // top: 60px;
+    border: none;
+    margin-top: 15px;
+    background-color: #dedede;
+    transition: 0.3s;
+    background-color: #7d8998;
+    border: none;
+    .shown {
+        opacity: 1;
+    }
+    .hidden {
+        opacity: 0;
+    }
+}

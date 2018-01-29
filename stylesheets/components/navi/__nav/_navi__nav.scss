@@ -1,0 +1,11 @@
+.c-nav {
+    display: none;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0; // top right bottom left
+    border: 1px solid #e3e3e3;
+    @include media($min1024) {
+        display: flex;
+        justify-content: space-between;        
+    }
+}

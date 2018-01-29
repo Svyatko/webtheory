@@ -1,0 +1,13 @@
+.c-nav__list {
+    @include clearfix();
+    list-style: none;
+    width: 53%;
+}
+
+.c-nav__list-item:first-child .c-nav__list-link {
+    padding-left: 13px;
+}
+
+.c-nav__list-item:last-child .c-nav__list-link {
+    border-right: none;
+}

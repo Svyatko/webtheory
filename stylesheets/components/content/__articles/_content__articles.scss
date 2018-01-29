@@ -1,0 +1,26 @@
+.c-content__articles {
+    position: relative;
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    &::after {
+        content: '';
+        width: 0;
+        height: 100%;
+        position: absolute;
+        border: 0.5px solid #f1f0f0;
+        top: 0;
+        right: -15px;
+    }
+    @include media($min1024) {
+        h4 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 11px;
+        }
+    }
+}

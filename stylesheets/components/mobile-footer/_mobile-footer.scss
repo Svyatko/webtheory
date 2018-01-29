@@ -1,0 +1,10 @@
+.c-mobile-footer p {
+    background-color: #50585a;
+    margin: 0;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    @include media($min1024) {
+        display: none;
+    }
+}

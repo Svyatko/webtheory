@@ -1,0 +1,6 @@
+.c-content__video-desc p {
+    font-size: 16px;
+    @include media($min1024) {
+        font-size: 14px;
+    }
+}

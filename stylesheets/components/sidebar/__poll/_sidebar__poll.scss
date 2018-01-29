@@ -1,0 +1,35 @@
+.c-sidebar__poll {
+    display: flex;
+    flex-direction: column;
+    background-color: #51595b;
+    label {
+        padding: 5px 10px;
+        color: #fff;
+        input {
+            margin-right: 5px;
+            background-color: #7f8f93;
+        }
+    }
+    h4.poll {
+        margin: 0;
+        padding: 5px 10px;
+        color: #fff;
+        font-style: italic;
+        font-weight: normal;
+        background-color: #494a4b;
+    }
+    & label:nth-child(3) {
+        border-top: 1px dashed #5e6567;
+        border-bottom: 1px dashed #5e6567;
+    }
+
+    button {
+        width: 95%;
+        margin: 5px auto;
+        border-radius: 5px;
+        border: none;
+        background-color: #7d8998;
+        color: #fff;
+        padding: 5px 0;
+    }
+}

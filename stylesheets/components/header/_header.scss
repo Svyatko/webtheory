@@ -1,0 +1,11 @@
+.c-header {
+    background-color: #fff;
+    border-bottom: 3px solid #bccadc;
+
+    @include media($min1024) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+}

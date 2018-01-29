@@ -1,0 +1,8 @@
+.c-content {
+    // background-color: blue;
+    // width: 700px;
+    // height: 80vh;
+    @include media($min1024) {
+        @include span-columns(9 of 12);
+    }
+}

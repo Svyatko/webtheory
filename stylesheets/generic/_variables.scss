@@ -1,0 +1,61 @@
+/*
+    Content:
+    1. Import Neat helpers
+    2. Visual Grid settings
+    3. Grid settings
+    4. Media Breakpoints
+    5. Typography settings
+    6. Colors settings
+    7. Z-index values
+ */
+
+
+/*
+    1. Import Neat helpers
+ */
+@import "../vendor/neat/neat-helpers";
+
+
+/*
+    2. Visual Grid settings (required neat helpers)
+ */
+$visual-grid-index: front !global;
+$visual-grid-color: black !global;
+$visual-grid-opacity: 0.05 !global;
+$visual-grid: false !global;
+
+/*
+    3. Grid settings
+ */
+$grid-columns: 12 !global;
+$max-width: 1000px !global;
+
+
+/*
+    4. Media Breakpoints
+ */
+$min640: new-breakpoint(min-width 640px 6); // mobile
+$min768: new-breakpoint(min-width 768px 6); // iPad
+$min1024: new-breakpoint(min-width 1024px 12); // Desktop small
+$min1280: new-breakpoint(min-width 1240px 12); // Desktop large
+$mobile: new-breakpoint(max-width 1023px 12); // Mobile
+
+
+/*
+    5. Typography settings
+ */
+$base-font: $font-SegoeUI--regular, sans-serif;
+$base-font-size: 14px;
+$base-line-height: 1.4;
+
+
+/*
+    6. Colors settings
+ */
+$base-font--color: #000;
+$base-link--color: blue;
+$base-background-color: #e5e5e5;
+
+/*
+    7. Z-index values
+ */

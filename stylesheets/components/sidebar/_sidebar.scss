@@ -1,0 +1,11 @@
+.c-sidebar {
+    @include media($min1024) {
+        @include span-columns(3 of 12);
+        display: block;
+    }
+
+    display: none;
+    border-right: 3px solid #8dc33d;
+    background-color: #50585a;
+    position: relative;
+}

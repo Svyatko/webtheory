@@ -1,0 +1,13 @@
+.c-nav__list-link {
+    color: black;
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 9px 10px;
+    border-left: 1px solid #e3e3e3;
+    color: #737373;
+}
+
+.c-nav__list-item:first-child .c-nav__list-link {
+    border-left: none;
+}

@@ -1,0 +1,25 @@
+.c-mobile__poll {
+    label {
+        padding: 5px 10px;
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        input {
+            margin-right: 5px;
+            background-color: #7f8f93;
+        }
+    }
+    h4.poll {
+        margin: 0;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: normal;
+        background-color: #494a4b;
+    }
+    & label:nth-child(3) {
+        border-top: 1px dashed #5e6567;
+        border-bottom: 1px dashed #5e6567;
+    }
+}

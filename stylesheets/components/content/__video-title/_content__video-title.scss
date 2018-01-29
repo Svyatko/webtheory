@@ -1,0 +1,15 @@
+.c-content__video-title {
+    // padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: #7cb3ac;
+        margin-right: 5px;
+    }
+    
+    @include media($min1024) {
+        justify-content: space-between;
+        font-size: 9px;
+    }
+}

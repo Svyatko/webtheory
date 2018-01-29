@@ -1,0 +1,14 @@
+.c-header__logo {
+    margin: 10px auto;
+    p {
+        font-size: 11px;
+        color: #bfbfbf;
+        margin: 0;
+    }
+    img {
+        display: block;
+    }
+    @include media($min1024) {
+        margin: 13px 0 0px 18px;
+    }
+}

@@ -1,0 +1,44 @@
+.c-header__buttoms {
+    // display: block;  
+    position: relative;
+    @include clearfix();
+    
+    button {
+        display: block;
+        width: 100%;
+        background-color: #7d8998;
+        border-radius: 5px;
+        border: none;
+        margin: 12px 0;
+        font-size: 12px;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        @include media($min1024) {
+            margin: 5px 10px;
+            font-size: 11px;
+            float: left;
+            width: auto;
+            padding: 8px;
+        } 
+        img {
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+    }
+    @include media($min1024) {
+        margin: 15px 5px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            height: 100%;
+            border: 0.5px solid #e3e3e3;
+        }
+        
+        &:last-child {
+            margin-right: 10px;
+        }
+    }
+}
